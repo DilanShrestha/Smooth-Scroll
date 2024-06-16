@@ -1,0 +1,83 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Animation on Scroll</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <style>
+        @keyframes appear {
+            from {
+    opacity: 0;
+    scale: 0.5; 
+    /* clip-path: inset(100% 100% 0 0); */
+
+            }
+            to {
+    opacity: 1;
+    scale: 1;
+    transform: translateX(0px);
+    /* clip-path: inset(0 0 0 0); */
+            }
+
+        
+
+        }
+
+        .box {
+            animation: appear  linear;
+            animation-timeline: view();
+            animation-range: entry 0% cover 40%;
+            /* animation-range: entry 0; */
+
+
+        }
+
+
+
+        
+    </style>
+    <body>
+    <h1>Animation On Scroll</h1>
+    <div class="view">
+        <div class="box" id="cube" style="background-color: aqua;"></div>
+        <div class="box" id="cuboid"></div>
+        <div class="box" id="cuboid" style="background-color: rgb(151, 197, 197);"></div>
+        <div class="box" id="cuboid" style="background-color: rgb(205, 255, 140);"></div>
+        <div class="box" id="cuboid" style="background-color: aqua;"></div>
+        <div class="box" id="cuboid" style="background-color: rgb(148, 21, 165);"></div>
+        <div class="box" id="cube"  style="background-color: aqua;"></div>
+        <div class="box" id="cuboid"></div>
+        <div class="box" id="cube" style="background-color: yellow"></div>
+        <div class="box" id="cube"></div>
+        <div class="box" id="cube" style="background-color: rgb(228, 43, 135);"></div>
+        <div class="box" id="cube"></div>
+        <div class="box" id="cube" style="background-color: blue;"></div>
+        <div class="box" id="cuboid"></div>
+        <div class="box" id="cube" style="background-color: rgb(255, 153, 0);"></div>
+        <div class="box" id="cuboid"></div>
+        <div class="box" id="cuboid" style="background-color: rgb(151, 197, 197);"></div>
+        <div class="box" id="cuboid" style="background-color: rgb(205, 255, 140);"></div>
+        <div class="box" id="cuboid" style="background-color: aqua;"></div>
+        <div class="box" id="cuboid" style="background-color: rgb(148, 21, 165);"></div>
+        <div class="box" id="cube"  style="background-color: aqua;"></div>
+        <div class="box" id="cuboid"></div>
+        <div class="box" id="cube" style="background-color: yellow"></div>
+        <div class="box" id="cube"></div>
+        <div class="box" id="cube" style="background-color: rgb(228, 43, 135);"></div>
+        <div class="box" id="cube"></div>
+        <div class="box" id="cube" style="background-color: blue;"></div>
+        <div class="box" id="cuboid"></div>
+        <div class="box" id="cube" style="background-color: rgb(255, 153, 0);"></div>
+
+
+
+        <div class="box" id="cube"></div>
+
+
+        <div class="box" id="cube"></div>
+    </div>    
+    </body>
+    </html>

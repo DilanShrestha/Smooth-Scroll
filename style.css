@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    flex-direction: column;
+     align-items: center    ;
+     justify-content: center;
+}
+
+h1 {
+    text-align: center;
+}
+.view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+
+}
+.box {
+    border: 2px solid black;
+
+}
+
+#cube {
+     height: 250px;
+     width: 250px;
+     background-color: red;
+}
+#cuboid {
+    height: 250px;
+    width: 500px;
+    background-color: green;
+}
